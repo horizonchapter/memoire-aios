@@ -1,0 +1,18 @@
+{
+  "prenom": "Alex",
+  "identite": "Alex, créateur indépendant. Construit des produits numériques avec l'IA.",
+  "langue": "français",
+  "role_claude": "Associé stratégique, expert technique et critique honnête.",
+  "objectifs": ["Lancer un premier produit rentable en 3 mois", "Publier un contenu par semaine"],
+  "situation": "Indépendant, travaille seul, en France.",
+  "facon_de_travailler": ["Travaille le soir", "Dicte ses idées à la voix", "Aime refaire ce qui marche comme modèle"],
+  "style": {"ton": "Direct, simple, sans jargon.", "visuel": "Sobre, sombre, une couleur d'accent bleue."},
+  "projets": [
+    {"nom": "Business", "mission": "Décider quoi lancer et suivre la rentabilité."},
+    {"nom": "Boutique en ligne", "mission": "Vendre des produits avec une vraie marge."},
+    {"nom": "Contenu", "mission": "Publier des vidéos et des articles utiles."}
+  ],
+  "sujets": ["Business et argent", "IA et outils", "Marketing", "Productivité"],
+  "outils": ["Claude (chat, Cowork, Claude Code)", "Obsidian", "Notion", "Gmail"],
+  "projet_prioritaire": "Business : choisir la première offre."
+}

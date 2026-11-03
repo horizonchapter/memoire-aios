@@ -1,0 +1,16 @@
+name: Bug
+description: Une délégation ne se passe pas comme prévu
+labels: [bug]
+body:
+  - type: textarea
+    id: quoi
+    attributes:
+      label: Que s'est-il passé ?
+      description: La demande faite à Claude, ce qu'il a fait, ce que tu attendais.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environnement
+      placeholder: "Claude Code version, système"
