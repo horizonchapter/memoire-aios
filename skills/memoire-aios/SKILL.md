@@ -54,26 +54,27 @@ Puis passe en mode mémoire et crée la première note de session.
 
 ### Début de session
 1. Lis `INDEX.md`, `04-second-cerveau/Toi.md`, la dernière note de `Sessions/`, les notes d'`Erreurs/` liées au sujet et le STATE.md du projet.
-2. Sur « vas-y » : 5 lignes (où on en est, décidé, reste à faire, prochaine action), puis attends l'accord.
-3. Ne pose jamais une question dont la réponse est déjà dans la mémoire.
+2. Si une routine ou un autre outil a préparé une section « À importer dans le cerveau » (par exemple un suivi du soir ou une revue hebdomadaire dans Notion), ou des vidéos et articles marqués Utile ou Important pas encore importés : crée les notes correspondantes (une fiche par source dans `Connaissances/Sources/`) et marque la section comme importée.
+3. Sur « vas-y » : 5 lignes (où on en est, décidé, reste à faire, prochaine action), puis attends l'accord.
+4. Ne pose jamais une question dont la réponse est déjà dans la mémoire.
 
 ### Pendant : capturer
-Une note = une idée. Courte, datée, reliée par `[[...]]`, terminée par `↑ [[pôle]]`. Mettre à jour plutôt que dupliquer. Aucune note isolée.
+Rien d'utile ne se perd, même si l'utilisateur ne demande rien. Une note = une idée. Courte, datée, reliée par `[[...]]`, terminée par `↑ [[pôle]]`. Mettre à jour plutôt que dupliquer. Aucune note isolée : chaque note est reliée à son pôle, au projet ou au sujet, et à la session du jour.
 
 | Ce qui arrive | Dossier (dans 04-second-cerveau) | Nom et contenu |
 |---|---|---|
-| Idée | `Idées/` | `Idée - titre` |
+| Idée | `Idées/` | `Idée - titre` : l'idée, pourquoi, prochaine étape |
 | Décision | `Décisions/` | `AAAA-MM-JJ titre` : décision, pourquoi, ce que ça change |
 | Erreur ou piège | `Erreurs/` | ce qui s'est passé + **règle pour ne pas refaire** |
-| Vidéo, article, livre | `Connaissances/Sources/` | `Auteur - Titre` : idées clés, à appliquer, sujets ; puis mettre à jour la synthèse du sujet dans `Connaissances/Sujets/` |
+| Vidéo, article, livre | `Connaissances/Sources/` | `Auteur - Titre` : auteur, lien, date, idées clés, à appliquer, sujets `[[...]]` ; puis mettre à jour la synthèse du sujet dans `Connaissances/Sujets/` |
 | Façon de travailler qui revient | `Habitudes/` | ce que l'utilisateur fait → ce que Claude doit faire |
-| Demande répétée (« refais pareil ») | `Habitudes/` | proposer un modèle ou un skill |
-| Skill créé, modifié, installé, utilisé, supprimé | `Skills/` | historique daté + « utilisé dans » |
+| Demande répétée (« refais pareil ») | `Habitudes/` + `02-skills/STATE.md` | proposer un modèle ou un skill |
+| Skill créé, modifié, installé, utilisé, supprimé | `Skills/` | une note par skill : statut, à quoi il sert, historique daté (créé, modifié, supprimé, pourquoi), « Utilisé dans » (projet, date, verdict) |
 | Info personnelle | `Personnel/` | jamais de mot de passe, numéro, donnée bancaire, adresse |
 | Client, offre | `Clients/`, `Offres/` | modèles dans `Modèles/` |
 
 ### Fin de session (même sans « fin de session » : travail terminé ou plus d'une heure sans message)
-1. `Sessions/AAAA-MM-JJ` : projet, fait (détaillé), décisions, erreurs, habitudes observées, prochaine étape, avec des liens vers chaque note créée.
+1. `Sessions/AAAA-MM-JJ` : projet, fait (détaillé), décisions, erreurs, habitudes observées, prochaine étape, avec des liens vers chaque note créée. Pour un gros chantier, ajouter une note d'historique détaillée.
 2. Ligne du projet dans `INDEX.md`, STATE.md du projet, une ligne dans `JOURNAL_DE_BORD.md`.
 3. Si des notes ont été créées : `python3 scripts/verifier_liens.py` doit rester à « 1 groupe ».
 4. Terminer par 3 lignes : ce qui a été noté, où, prochaine étape.
