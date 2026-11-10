@@ -24,7 +24,11 @@
 - Au début : Claude lit la mémoire. Dis « vas-y » et il reprend où tu en es.
 - Pendant : il note chaque idée, décision, erreur (avec la règle pour ne pas refaire), source, habitude et skill.
 - À la fin : note de session, tableau de bord et état du projet mis à jour, même sans « fin de session ».
-- Plus tard : il répond « D'après tes notes… » en citant tes sources.
+- Plus tard : il répond « D'après tes notes… » en citant tes sources, et retrouve les notes liées à un sujet avant de répondre (`rappels.py`).
+
+**Entretien (chaque semaine)**
+- Contrôle de santé en lecture seule : STATE.md complets et à jour, projets sans STATE ou DECISIONS, sauvegardes à purger, fichiers en vrac (`controle_aios.py`).
+- Consolidation, comme le sommeil : sessions anciennes résumées en récap mensuel, doublons et notes trop maigres signalés, rien n'est supprimé (`consolider.py`).
 
 ## ✦ Aperçu
 
@@ -72,7 +76,10 @@ memoire-aios/
 │   ├── SKILL.md                 le skill
 │   ├── scripts/
 │   │   ├── creer_aios.py        crée l'AIOS à partir des réponses ; n'écrase jamais un fichier existant
-│   │   └── verifier_liens.py    vérifie que toutes les notes forment un seul réseau dans Obsidian
+│   │   ├── verifier_liens.py    vérifie que toutes les notes forment un seul réseau dans Obsidian
+│   │   ├── rappels.py           retrouve les notes liées à un sujet
+│   │   ├── controle_aios.py     contrôle de santé, en lecture seule
+│   │   └── consolider.py        consolidation hebdomadaire, sans rien supprimer
 │   └── exemples/                arborescence créée, réponses d'exemple, fiche source
 ├── memoire-aios.zip             le même skill, prêt à importer
 └── assets/                      bannière et aperçus

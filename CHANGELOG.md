@@ -1,4 +1,7 @@
 # Changelog
+## 2.2.0 (2026-11-10)
+- Trois scripts d'entretien : `rappels.py` (notes liées à un sujet), `controle_aios.py` (contrôle de santé en lecture seule), `consolider.py` (récaps mensuels, doublons, notes maigres, sans rien supprimer).
+- Mode mémoire : rappels avant de répondre et entretien hebdomadaire.
 ## 2.1.0 (2026-11-03)
 - Mode mémoire : import des sections « À importer dans le cerveau » préparées par les routines, fiches sources plus complètes (auteur, lien, date), une note complète par skill, idées avec pourquoi et prochaine étape, note d'historique pour les gros chantiers.
 ## 2.0.0 (2026-11-03)

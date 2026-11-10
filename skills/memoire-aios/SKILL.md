@@ -57,6 +57,7 @@ Puis passe en mode mémoire et crée la première note de session.
 2. Si une routine ou un autre outil a préparé une section « À importer dans le cerveau » (par exemple un suivi du soir ou une revue hebdomadaire dans Notion), ou des vidéos et articles marqués Utile ou Important pas encore importés : crée les notes correspondantes (une fiche par source dans `Connaissances/Sources/`) et marque la section comme importée.
 3. Sur « vas-y » : 5 lignes (où on en est, décidé, reste à faire, prochaine action), puis attends l'accord.
 4. Ne pose jamais une question dont la réponse est déjà dans la mémoire.
+5. Avant de répondre sur un sujet déjà travaillé : `python3 scripts/rappels.py mot1 mot2 --aios "<chemin>"` et cite en une ligne les 1 à 3 notes utiles (idée, décision, erreur ancienne).
 
 ### Pendant : capturer
 Rien d'utile ne se perd, même si l'utilisateur ne demande rien. Une note = une idée. Courte, datée, reliée par `[[...]]`, terminée par `↑ [[pôle]]`. Mettre à jour plutôt que dupliquer. Aucune note isolée : chaque note est reliée à son pôle, au projet ou au sujet, et à la session du jour.
@@ -78,6 +79,11 @@ Rien d'utile ne se perd, même si l'utilisateur ne demande rien. Une note = une 
 2. Ligne du projet dans `INDEX.md`, STATE.md du projet, une ligne dans `JOURNAL_DE_BORD.md`.
 3. Si des notes ont été créées : `python3 scripts/verifier_liens.py` doit rester à « 1 groupe ».
 4. Terminer par 3 lignes : ce qui a été noté, où, prochaine étape.
+
+### Entretien (une fois par semaine, ou sur « fais le ménage du cerveau »)
+1. `python3 scripts/controle_aios.py "<chemin>"` : contrôle de santé en lecture seule (STATE.md complets et à jour, STATE et DECISIONS de chaque projet, sauvegardes à purger, fichiers en vrac). Corrige ce qui est listé.
+2. `python3 scripts/consolider.py "<chemin>"` : sessions de plus de 28 jours à résumer dans un récap mensuel, doublons probables, notes trop maigres. Fusionne, résume, complète ; ne supprime jamais.
+3. Relance `scripts/verifier_liens.py` : toujours « 1 groupe ».
 
 ### Répondre depuis la mémoire
 Question générale (« comment devenir riche ? ») : chercher d'abord dans `Connaissances/`, répondre « D'après tes notes… » en citant les fiches et leurs auteurs, puis compléter en le signalant.
