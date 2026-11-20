@@ -99,7 +99,7 @@ Structure créée : voir [`arborescence.md`](skills/memoire-aios/exemples/arbore
 
 - [clearmind](https://github.com/horizonchapter/clearmind) : le skill de base conseillé (lit tout, n'invente rien, donne un avis franc).
 - [claude-second-brain](https://github.com/horizonchapter/claude-second-brain) : les modèles `CLAUDE.md` / `STATE.md` / `DECISIONS.md`.
-- [context-transfer](https://github.com/horizonchapter/context-transfer) : reprendre dans un nouveau chat sans rien perdre.
+- [memoire-relais](https://github.com/horizonchapter/memoire-relais) : lire et noter la mémoire, passer le relais d'un chat à l'autre sans rien perdre.
 - [chef-employe](https://github.com/horizonchapter/chef-employe) · [claude-routines](https://github.com/horizonchapter/claude-routines) · [mods-claude-code](https://github.com/horizonchapter/mods-claude-code) · [pdf-luxe](https://github.com/horizonchapter/pdf-luxe)
 
 ## ✦ Licence
